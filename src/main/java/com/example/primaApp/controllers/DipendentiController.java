@@ -21,7 +21,7 @@ public class DipendentiController {
   }
 
   @GetMapping("/findDipendenteBySettore/{settore}")
-  public Dipendente findDipendenteBySettore(@PathVariable String settore) {
+  public List<Dipendente> findDipendenteBySettore(@PathVariable String settore) {
     return service.findDipendenteBySettore(settore);
   }
 

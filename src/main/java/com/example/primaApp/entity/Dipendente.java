@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Dipendente {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
 
     private String nome;
 

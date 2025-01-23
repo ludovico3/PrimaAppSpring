@@ -1,27 +1,25 @@
 package com.example.primaApp.services;
 
 import com.example.primaApp.entity.Professori;
+import com.example.primaApp.repositories.ProfessoriDBRepository;
 import com.example.primaApp.repositories.ProfessoriRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class ProfessoriService {
 
-    private final ProfessoriRepository repository;
-
-
-    public ProfessoriService(ProfessoriRepository repository) {
-        this.repository = repository;
-    }
+    private final ProfessoriDBRepository repository;
 
     public List<Professori> findAllProfessori() {
-        return repository.findAllProfessori();
+        return repository.findAll();
     }
 
     public Professori findProfessoriByMateria(String materia) {
-      return repository.findProfessoriByMateria(materia);
+      return repository.findByMateria(materia);
     }
 
     public Professori save(Professori p) {
