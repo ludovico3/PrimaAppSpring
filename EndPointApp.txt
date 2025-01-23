@@ -1,0 +1,12 @@
+
+localhost:8082/api/professori/findAllProfessori
+localhost:8082/api/professori/save
+localhost:8082/api/professori/findProfessoriByMateria/{materia}
+
+localhost:8082/api/students/findAllStudents
+localhost:8082/api/students/save
+localhost:8082/api/students/findByMatricola/{matricola}
+
+localhost:8082/api/dipendenti/findAllDipendente
+localhost:8082/api/dipendenti/save
+localhost:8082/api/dipendenti/findDipendenteBySettore/{settore}

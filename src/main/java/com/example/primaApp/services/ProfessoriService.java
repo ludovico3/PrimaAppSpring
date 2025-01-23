@@ -20,7 +20,15 @@ public class ProfessoriService {
         return repository.findAllProfessori();
     }
 
+    public Professori findProfessoriByMateria(String materia) {
+      return repository.findProfessoriByMateria(materia);
+    }
+
     public Professori save(Professori p) {
         return repository.save(p);
     }
+
+
+
+
 }

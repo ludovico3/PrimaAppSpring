@@ -24,8 +24,16 @@ public class ProfessoriController {
         return service.findAllProfessori();
     }
 
+    @GetMapping("/findProfessoriByMateria/{materia}")
+    public Professori findProfessoriByMateria(@PathVariable String materia) {
+      return service.findProfessoriByMateria(materia);
+    }
+
     @PostMapping("/save")
     public Professori save(@RequestBody Professori p) {
         return service.save(p);
     }
+
+
+
 }

@@ -24,6 +24,18 @@ public class ProfessoriRepository {
 
     public List<Professori> findAllProfessori() { return PROFESSORI;}
 
+    public Professori findProfessoriByMateria(String materia) {
+        Professori p = new Professori();
+
+        for (Professori prof : PROFESSORI) {
+            if (prof.getMateria().equals(materia)) {
+              p = prof;
+            }
+        }
+
+        return p;
+    }
+
     public Professori save(Professori p) {
         PROFESSORI.add(p);
         return p;
