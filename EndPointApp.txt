@@ -10,3 +10,7 @@ localhost:8082/api/students/findByMatricola/{matricola}
 localhost:8082/api/dipendenti/findAllDipendente
 localhost:8082/api/dipendenti/save
 localhost:8082/api/dipendenti/findDipendenteBySettore/{settore}
+
+localhost:8082/api/ricercatore/findAllRicercatori
+localhost:8082/api/ricercatore/save
+localhost:8082/api/ricercatore/findRicercatoreByMateria/{materia}
